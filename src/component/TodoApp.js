@@ -16,7 +16,10 @@ class TodoApp extends React.Component{
 handleFormInsert(insert){
   if(!insert){
     return('Please add item')
-  }
+  }else
+  if(this.options.indexOf(insert) > -1){
+     return 'This item is already exists'
+   }
  this.setState((prevState)=>{
     return{
       options:prevState.options.concat([insert])
