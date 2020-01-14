@@ -8,6 +8,7 @@ class TodoApp extends React.Component{
     super(props);
     this.handleFormInsert = this.handleFormInsert.bind(this)
     this.deleteItem = this.deleteItem.bind(this)
+    this.deleteInsert = this.deleteInsert.bind(this)
     this.state = {
         options: []
     }
@@ -29,6 +30,14 @@ deleteItem(){
    }
  })
 }
+deleteInsert(insert){
+  const items = [...this.state.options]
+  items.splice(items.indexOf(insert),1)
+  this.setState(()=>{
+    return{options:items}
+  })
+  console.log('hi')
+}
   render(){
     const title = 'My List'
     const subTitle = 'Please add item'
@@ -36,7 +45,8 @@ deleteItem(){
                  <Header title={title} subTitle={subTitle}/>
                  <Form handleFormInsert = {this.handleFormInsert}/>
                  <Options options = {this.state.options}
-                  deleteItem = {this.deleteItem}/>
+                          deleteItem = {this.deleteItem}
+                          deleteInsert = {this.deleteInsert}/>
                </div>
                )
           }

@@ -3,7 +3,10 @@ class Insert extends React.Component{
     render(){
       return(
         <div>
-          <p>{this.props.InsertValue}</p>
+          <p>{this.props.insertValue}
+          <button onClick = {this.props.newDelete}>Delete</button>
+          </p>
+          
         </div>
       )
     }
