@@ -15,7 +15,7 @@ class TodoApp extends React.Component{
 }
 handleFormInsert(insert){
   if(!insert){
-    console.log('jhhsdchj')
+    return('Please add item')
   }
  this.setState((prevState)=>{
     return{
