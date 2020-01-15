@@ -39,7 +39,6 @@ deleteInsert(insert){
   this.setState(()=>{
     return{options:items}
   })
-  console.log('hi')
 }
   render(){
     const title = 'My List'
