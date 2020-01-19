@@ -43,12 +43,14 @@ deleteInsert(insert){
   render(){
     const title = 'My List'
     const subTitle = 'Please add item'
-      return ( <div className = "form">
+      return ( <div>
                  <Header title={title} subTitle={subTitle}/>
-                 <Form handleFormInsert = {this.handleFormInsert}/>
+                 <div className="container">
                  <Options options = {this.state.options}
                           deleteItem = {this.deleteItem}
                           deleteInsert = {this.deleteInsert}/>
+                          <Form handleFormInsert = {this.handleFormInsert}/>
+                 </div>
                </div>
                )
           }

@@ -1,13 +1,13 @@
 .header{
-    background: $header-color;
-    margin-bottom: 4.8rem;
-    padding: 1.6rem 0;
-    color: #6833FF;
+    background: $color-black;
+    margin-bottom: $xl-size;
+    padding: $m-size;
+    color: $color-purple;
 }
 .header__title{
-    font-size: 3.2rem;
+    font-size: $l-size;
     margin: 0;
 }
 .header__subTitle{
-    color: #d7a5d4;
+    color: $color-pink;
 }

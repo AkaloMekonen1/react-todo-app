@@ -5,10 +5,10 @@ class Options extends React.Component{
       const newDelete = this.props.deleteInsert
       return(
         <div>
+        <button onClick = {this.props.deleteItem}>Remove All</button>
            {this.props.options.map((insert)=>
              <Insert key={insert} insertValue = {insert} newDelete={newDelete} />
              )}
-            <button onClick = {this.props.deleteItem}>Remove All</button>
           </div>
       )
     }

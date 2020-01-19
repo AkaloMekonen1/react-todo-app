@@ -13,7 +13,7 @@ class Form extends React.Component{
      }
 render(){   
     return( 
-        <div className="form">
+        <div>
           <form onSubmit = {this.handleFormInsert}>
              <input type = "text" name = "insert"/>
              <button>Add</button>
