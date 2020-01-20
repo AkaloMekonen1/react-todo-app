@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './Form';
 import Header from './Header'
 import Options from './Options'
+import PickItem from './PickItem';
 
 class TodoApp extends React.Component{ 
   constructor(props){
@@ -9,6 +10,7 @@ class TodoApp extends React.Component{
     this.handleFormInsert = this.handleFormInsert.bind(this)
     this.deleteItem = this.deleteItem.bind(this)
     this.deleteInsert = this.deleteInsert.bind(this)
+    this.handlePick = this.handlePick.bind(this)
     this.state = {
         options: []
     }
@@ -40,12 +42,16 @@ deleteInsert(insert){
     return{options:items}
   })
 }
+handlePick(){
+  return(alert('hi'))
+}
   render(){
     const title = 'My List'
     const subTitle = 'Please add item'
       return ( <div>
                  <Header title={title} subTitle={subTitle}/>
                  <div className="container">
+                 <PickItem handlePick ={this.handlePick}/>
                  <Options options = {this.state.options}
                           deleteItem = {this.deleteItem}
                           deleteInsert = {this.deleteInsert}/>
