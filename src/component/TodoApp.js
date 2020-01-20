@@ -43,7 +43,8 @@ deleteInsert(insert){
   })
 }
 handlePick(){
-  return(alert('hi'))
+  const itemPicked = Math.floor(Math.random() * this.state.options.length)
+  return(alert(itemPicked))
 }
   render(){
     const title = 'My List'
