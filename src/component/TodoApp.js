@@ -43,7 +43,8 @@ deleteInsert(insert){
   })
 }
 handlePick(){
-  const itemPicked = Math.floor(Math.random() * this.state.options.length)
+  const number = Math.floor(Math.random() * this.state.options.length)
+  const itemPicked = this.state.options[number]
   return(alert(itemPicked))
 }
   render(){
