@@ -53,7 +53,8 @@ handlePick(){
       return ( <div>
                  <Header title={title} subTitle={subTitle}/>
                  <div className="container">
-                 <PickItem handlePick ={this.handlePick}/>
+                 <PickItem handlePick ={this.handlePick}
+                           hasOptions = {this.state.options.length>0}/>
                  <Options options = {this.state.options}
                           deleteItem = {this.deleteItem}
                           deleteInsert = {this.deleteInsert}/>
