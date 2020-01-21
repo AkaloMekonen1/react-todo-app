@@ -12,3 +12,12 @@
 .big-button:disabled {
     opacity: .5;
 }
+
+.button{
+    background-color: $color-blue;
+    color: white;
+    border: none;
+    border-bottom: .3rem solid darken( $color-blue, 10%);
+    font-weight: 500;
+    padding: $s-size;
+}

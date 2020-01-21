@@ -16,7 +16,7 @@ render(){
         <div>
           <form onSubmit = {this.handleFormInsert}>
              <input type = "text" name = "insert"/>
-             <button>Add</button>
+             <button className = "button">Add Option</button>
           </form>
         </div>
     )
