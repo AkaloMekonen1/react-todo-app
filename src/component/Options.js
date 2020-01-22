@@ -5,7 +5,7 @@ class Options extends React.Component{
       const newDelete = this.props.deleteInsert
       return(
         <div>
-        <button 
+        <button className="button button--link"
             onClick = {this.props.deleteItem}
                 disabled = {this.props.options==0}>Remove All</button>
              {this.props.options.map((insert)=>

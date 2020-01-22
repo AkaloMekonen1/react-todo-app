@@ -4,7 +4,8 @@ class Insert extends React.Component{
       return(
         <div>
           <p>{this.props.insertValue}
-          <button onClick = {this.props.newDelete}>Delete</button>
+          <button className="button button--link"
+           onClick = {this.props.newDelete}>Delete</button>
           </p>
           
         </div>
