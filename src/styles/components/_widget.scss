@@ -1,3 +1,7 @@
 .widget-header{
     background: $blue ;
+    color: $color-white;
+    padding: $m-size;
+    display: flex;
+    justify-content: space-between;
 }
