@@ -15,7 +15,6 @@ class Options extends React.Component{
              <Insert key={insert} insertValue = {insert} newDelete={newDelete} />
              )}
           </div>
-          <p>{optionTitle}</p>
           </div>
       )
     }
