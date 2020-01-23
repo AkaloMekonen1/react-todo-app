@@ -12,6 +12,7 @@ class Options extends React.Component{
             onClick = {this.props.deleteItem}
                 disabled = {this.props.options==0}>Remove All</button>
                 </div>
+                {this.props.options.length===0 && <p>Please add an option</p>}
              {this.props.options.map((insert)=>
              <Insert key={insert} insertValue = {insert} newDelete={newDelete} />
              )}
