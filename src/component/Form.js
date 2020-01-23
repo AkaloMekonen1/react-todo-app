@@ -13,7 +13,7 @@ class Form extends React.Component{
      }
 render(){   
     return( 
-        <div className="widget">
+        <div>
         <p>Please add an option</p>
           <form onSubmit = {this.handleFormInsert}>
              <input type = "text" name = "insert"/>
