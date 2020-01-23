@@ -55,10 +55,12 @@ handlePick(){
                  <div className="container">
                  <PickItem handlePick ={this.handlePick}
                            hasOptions = {this.state.options.length>0}/>
+                           <div  className="widget">
                  <Options options = {this.state.options}
                           deleteItem = {this.deleteItem}
                           deleteInsert = {this.deleteInsert}/>
                           <Form handleFormInsert = {this.handleFormInsert}/>
+                          </div>
                  </div>
                </div>
                )
