@@ -20,7 +20,7 @@ handleFormInsert(insert){
     return('Please add item')
   }else
   if(this.state.options.indexOf(insert) > -1){
-     return 'This item is already exists'
+     return('This item is already exists')
    }
  this.setState((prevState)=>{
     return{
