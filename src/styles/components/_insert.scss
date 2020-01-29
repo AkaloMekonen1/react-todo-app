@@ -1,5 +1,6 @@
 .insert{
     display: flex;
     justify-content: space-between;
-    color: red;
+    padding: $s-size $m-size;
+    border-bottom: 1px solid lighten($light-blue, 10%);
 }

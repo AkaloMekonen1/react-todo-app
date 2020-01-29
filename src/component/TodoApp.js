@@ -37,7 +37,7 @@ deleteItem(){
 }
 deleteInsert(insert){
   const items = [...this.state.options]
-  items.splice(items.indexOf(insert),1)
+  items.splice(items.indexOf(insert))
   this.setState(()=>{
     return{options:items}
   })
