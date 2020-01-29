@@ -3,7 +3,6 @@ import Insert from './Insert'
 class Options extends React.Component{
     render(){
       const newDelete = this.props.deleteInsert
-      const optionTitle = "Please add an option"
       return(
         <div>
         <div className="widget-header">
@@ -13,8 +12,8 @@ class Options extends React.Component{
                 disabled = {this.props.options==0}>Remove All</button>
                 </div>
                 {this.props.options.length===0 && <p className="widget__message">Please add an option</p>}
-             {this.props.options.map((insert,index)=>
-             <Insert key={insert} count={index+1} insertValue = {insert} newDelete={newDelete} />
+             {this.props.options.map((insert)=>
+             <Insert key={insert} insertValue = {insert} newDelete={newDelete} />
              )}
           
           </div>
