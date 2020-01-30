@@ -25,7 +25,7 @@ render(){
         <div>
            {this.state.error &&<p className="add-insert-error">{this.state.error}</p>}
           <form className="add-insert" onSubmit = {this.handleFormInsert}>
-             <input type = "text" name = "insert"/>
+             <input className="add-insert-input" type = "text" name = "insert"/>
              <button className = "button">Add Option</button>
           </form>
         </div>
