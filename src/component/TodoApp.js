@@ -30,7 +30,7 @@ handleFormInsert(insert){
 }
 deleteItem(){
  this.setState(()=>{
-   return{
+   return{ 
      options: []
    }
  })
