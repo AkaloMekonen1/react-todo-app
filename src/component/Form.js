@@ -23,7 +23,7 @@ class Form extends React.Component{
 render(){   
     return( 
         <div>
-           {this.state.error &&<p>{this.state.error}</p>}
+           {this.state.error &&<p className="add-insert-error">{this.state.error}</p>}
           <form onSubmit = {this.handleFormInsert}>
              <input type = "text" name = "insert"/>
              <button className = "button">Add Option</button>
