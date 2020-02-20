@@ -19,7 +19,6 @@ class Form extends React.Component{
         e.target.elements.insert.value = ''
        }
      }
-     
 render(){   
     return( 
         <div>
